@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.footerContent{
+    background-color: #052840;
+    height: 31vh;
+    position: relative;
+}
+
+.container{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.footerLogo{
+    width: 266px;
+    position: absolute;
+    top: 20px;
+
+    .footerLogoBox{
+        width: 266px;
+        display: flex;
+
+        img{
+            margin: 0 auto;
+        }
+    }
+
+    .footerTitle{
+        color: #C9AC7A;
+    }
+}
+
+.footerInfo{
+    position: absolute;
+    right: 210px;
+    bottom: 40px;
+
+    .infoContent{
+        display: flex;
+
+        span{
+            font-size: 20px;
+            color: #C9AC7A;
+            margin-right: 4px;
+        }
+
+        p{
+            color: #fff;
+            font-size: 20px;
+        }
+
+        a{
+            color: #fff;
+
+            &:hover{
+                color: #C9AC7A;
+            }
+        }
+    }
+}
