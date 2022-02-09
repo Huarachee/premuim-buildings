@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cardWrapper{
+    width: 550px;
+    min-height: 560px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 10px 5px 5px rgba($color: #000000, $alpha:.5);
+    transition: all .4s;
+
+    &:hover{
+        box-shadow: none;
+    }
+
+    .cardImgContainer{
+        width: 549px;
+        height: 300px;
+        margin: -0.1px 1px 0 0;
+        overflow: hidden;
+
+        .cardImg{
+        
+            transition: all .4s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .apartmentsName{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .cardLineTop{
+        width: 350px;
+        height: 1px;
+        background-color: #C9AC7A;
+        margin: 20px auto 12px auto;
+    }
+
+    .apartmentDescription{
+        font-size: 19px;
+        min-width: 400px;
+        text-align: center;
+        margin: -7px 16px 10px 16px;
+    }
+
+    .cardLineBottom{
+        width: 150px;
+        height: 1px;
+        background-color: #C9AC7A;
+        margin: 0 auto;
+    }
+}
+
+.infoBottomContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0 25px 0;
+
+    .squareApartmentContainer{
+        min-width: 185.66px;
+        border: 2px solid #C9AC7A;
+
+        .squareApartmentTitle{
+            text-align: center;
+            margin: 5px 0 -8px 0;
+        }
+
+        .squareApartment{
+            font-size: 24px;
+            text-align: center;
+            margin: 0 15px 8px 15px;  
+        }
+    }
+
+    .priceApartmentContainer{
+        min-width: 185.66px;
+        border: 2px solid #C9AC7A;
+
+        .priceApartmentTitle{
+            text-align: center;
+            margin: 5px 0 -8px 0;
+        }
+
+        .pricePenthouses{
+            font-size: 24px;
+            text-align: center;
+            margin: 0 15px 8px 15px;
+        }
+    }
+}

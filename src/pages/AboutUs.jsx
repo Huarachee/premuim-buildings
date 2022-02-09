@@ -8,7 +8,16 @@ function AboutUs() {
         <div className="aboutUsContent">
             <Header/>
             <div className="container">
-                <h1>Здесь будет инфа "о нас"</h1>
+                <div className="aboutUsTitle">
+                    <div className="titleLineTop"></div>
+                    <h1>
+                       О нас
+                    </h1>
+                    <div className="titleLinebottom"></div>
+                </div>
+                <div className="aboutUsContainer">
+                    <h2 className="aboutUsContainerTitle">Хмельницкий, 11</h2>
+                </div>
             </div>
             <Footer/>
         </div>

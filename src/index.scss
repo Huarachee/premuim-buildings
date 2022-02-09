@@ -281,7 +281,7 @@
   margin: 40px 0 40px 30px;
 
   .titleLineTop{
-    width: 193px;
+    width: 480px;
     height: 2px;
     background-color: #C9AC7A;
   }
@@ -293,7 +293,7 @@
   }
 
   .titleLinebottom{
-    width: 313px;
+    width: 680px;
     height: 2px;
     background-color: #C9AC7A;
   }
@@ -424,6 +424,39 @@
 
 // ~~ Home-page -- end ~~
 
+// ~~ AboutUs-page -- start ~~
+
+.aboutUsTitle{
+  padding: 120px 0 40px 30px;
+
+  .titleLineTop{
+    width: 93px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+
+  h1{
+    font-size: 48px;
+    color: #C9AC7A;
+    margin: -9px 0 0 8px;
+  }
+
+  .titleLinebottom{
+    width: 160px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+}
+
+.aboutUsContainer{
+
+  .aboutUsContainerTitle{
+    font-size: 30px;
+  }
+}
+
+// ~~ AboutUs-page -- end ~~
+
 
 // ~~ Apartments-page -- start ~~
 
@@ -431,8 +464,146 @@
 
 // ~~ Apartments-page -- end ~~
 
+.apartmentsContentTitle{
+  padding: 120px 0 40px 30px;
+
+  .titleLineTop{
+    width: 193px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+
+  h1{
+    font-size: 48px;
+    color: #C9AC7A;
+    margin: -9px 0 0 8px;
+  }
+
+  .titleLinebottom{
+    width: 313px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+}
+
+.cardApartmentsContainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 60px;
+  margin: 10px auto 40px auto;
+}
 
 // ~~ Penthouses-page -- start ~~
 
+.penthousesContentWrapper{
+  padding: 10px 0 40px 0;
+}
+
+.penthousesContentTitle{
+  padding: 120px 0 40px 30px;
+
+  .titleLineTop{
+    width: 193px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+
+  h1{
+    font-size: 48px;
+    color: #C9AC7A;
+    margin: -9px 0 0 8px;
+  }
+
+  .titleLinebottom{
+    width: 313px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+}
+
+.cardApartmentsContainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 100px;
+  grid-row-gap: 60px;
+  margin: 10px auto 40px auto;
+}
 
 // ~~ Penthouses-page -- end ~~
+
+
+// ~~ ConstructionProgress -- start ~~
+
+.constructionProgressTitle{
+  padding: 120px 0 40px 30px;
+
+  .titleLineTop{
+    width: 310px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+
+  h1{
+    font-size: 48px;
+    color: #C9AC7A;
+    margin: -9px 0 0 8px;
+  }
+
+  .titleLinebottom{
+    width: 500px;
+    height: 2px;
+    background-color: #C9AC7A;
+  }
+}
+
+.progressContainer{
+  margin: 25px 0;
+}
+
+.progressBox{
+  display: flex;
+}
+
+.circleYear{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #C9AC7A;
+  border: 2px solid #000;
+
+  p{
+    font-size: 48px;
+    margin: 24px 0 0 13px;
+  }
+}
+
+.progressBoxText{
+  margin: -18px 0 0 25px;
+
+
+  .progressBoxTitle{
+    font-size: 50px;
+    font-weight: bold;
+    color: #C9AC7A;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+  }
+
+  p{
+    font-size: 36px;
+    line-height: 40px;
+    width: 900px;
+  }
+}
+
+.circleLine{
+  width: 3px;
+  height: 100px;
+  background-color: #000;
+  margin: 0 0 0 63px;
+}
+
+// ~~ ConstructionProgress -- end ~~

@@ -51,7 +51,7 @@ function Home() {
                         <div className="penthousesBox">
                             <div className="penthousesInfo">
                                 <p className="penthousesTitle">
-                                    <span className="penthousesTitleSpan">10 </span><br/>пентхаусов
+                                    <span className="penthousesTitleSpan">6 </span><br/>пентхаусов
                                 </p>
                                 <div className="penthousesAreaContainer">
                                     <div className="penthousesAreaInfo">
@@ -69,7 +69,7 @@ function Home() {
                     <div className="benefitsBuildingsTitle">
                         <div className="titleLineTop"></div>
                         <h1>
-                           Преимущества
+                           Преимущества нашего ЖК
                         </h1>
                         <div className="titleLinebottom"></div>
                     </div>

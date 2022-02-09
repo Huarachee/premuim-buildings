@@ -1,13 +1,34 @@
 import React from "react";
 
-import { Header, Footer } from '../components/index';
+import { Header, Footer, Card } from '../components/index';
 
-function Penthouses() {
+function Penthouses({ itemsCardPethouses }) {
     return(
         <div className="penthousesContent">
             <Header/>
             <div className="container">
-                <h1>Здесь будут пентхаусы</h1>
+                <div className="penthousesContentWrapper">
+                    <div className="penthousesContentTitle">
+                        <div className="titleLineTop"></div>
+                        <h1>
+                           Пентхаусы
+                        </h1>
+                        <div className="titleLinebottom"></div>
+                    </div>
+                    <div className="cardApartmentsContainer">
+                        {itemsCardPethouses.map((item, index) => (
+                            <Card
+                                key={`${index}_${item}`}
+                                apartmentsUrlImg={item.apartmentsUrlImg}
+                                apartmentsName={item.apartmentsName}
+                                squareApartment={item.squareApartment}
+                                priceApartment={item.priceApartment}
+                                apartmentDescription={item.apartmentDescription}
+                            />
+                        ))}
+                    </div>
+                    
+                </div>
             </div>
             <Footer/>
         </div>
