@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import style from "./Card.module.scss";
 
-function Card({ apartmentsUrlImg, apartmentsName, squareApartment, priceApartment, apartmentDescription }) {
+function Card({ apartmentsUrlImg, apartmentsName, squareApartment, priceApartment, apartmentDescription, watchPenthousesLink }) {
     return(
         <div className={style.cardWrapper}>
             <div className={style.cardImgContainer}>
@@ -36,7 +37,11 @@ function Card({ apartmentsUrlImg, apartmentsName, squareApartment, priceApartmen
                     </p>
                 </div>
             </div>
-            
+            <Link to={`${watchPenthousesLink}`}>
+                <div className={style.watchPenthousesBtn}>
+                    Смотреть
+                </div>
+            </Link>     
         </div>
     );
 }

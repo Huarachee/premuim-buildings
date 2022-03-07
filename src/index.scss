@@ -422,9 +422,9 @@
 
 // Benefits-buildings -- end
 
-// ~~ Home-page -- end ~~
+// ~~ Home-PAGE -- end ~~
 
-// ~~ AboutUs-page -- start ~~
+// ~~ AboutUs-PAGE -- start ~~
 
 .aboutUsTitle{
   padding: 120px 0 40px 30px;
@@ -455,14 +455,14 @@
   }
 }
 
-// ~~ AboutUs-page -- end ~~
+// ~~ AboutUs-PAGE -- end ~~
 
 
-// ~~ Apartments-page -- start ~~
+// ~~ Apartments-PAGE -- start ~~
 
 
 
-// ~~ Apartments-page -- end ~~
+// ~~ Apartments-PAGE -- end ~~
 
 .apartmentsContentTitle{
   padding: 120px 0 40px 30px;
@@ -495,7 +495,7 @@
   margin: 10px auto 40px auto;
 }
 
-// ~~ Penthouses-page -- start ~~
+// ~~ Penthouses-PAGE -- start ~~
 
 .penthousesContentWrapper{
   padding: 10px 0 40px 0;
@@ -532,10 +532,10 @@
   margin: 10px auto 40px auto;
 }
 
-// ~~ Penthouses-page -- end ~~
+// ~~ Penthouses-PAGE -- end ~~
 
 
-// ~~ ConstructionProgress -- start ~~
+// ~~ ConstructionProgress-PAGE -- start ~~
 
 .constructionProgressTitle{
   padding: 120px 0 40px 30px;
@@ -606,4 +606,311 @@
   margin: 0 0 0 63px;
 }
 
-// ~~ ConstructionProgress -- end ~~
+// ~~ ConstructionProgress-PAGE -- end ~~
+
+
+// ~~ PagePenthouses-ALL-PAGE -- start ~~
+
+.pagePenthousesContentContainer{
+  padding: 100px 0 20px 0;
+  background-color: #fff;
+}
+
+.linkPagePenthouses{
+  text-decoration: none;
+}
+
+.backContainer{
+  width: 170px;
+  display: flex;
+  border: 2px solid #C9AC7A;
+  padding: 5px;
+  text-decoration: none;
+  transition: all .4s;
+
+  // &:hover{
+  //   transform: translateX(-5px);
+  // }
+
+  .backContainerText{
+    font-size: 34px;
+    color: #C9AC7A;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+}
+
+.pagePenthousesTitle{
+  font-size: 45px;
+  margin: 15px 0 15px 0;
+}
+
+.pagePenthousesImg{
+  margin: 15px 0 11px 0;
+}
+
+.pagePenthousesLine{
+  width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.pagePenthousesInfo{
+  display: flex;
+  margin: 15px 0 15px 0;
+
+  .penthousesSquareContainer{
+    width: 185.66px;
+    border: 2px solid #C9AC7A;
+    margin-right: 25px;
+  
+    .penthousesSquareTitle{
+      text-align: center;
+      font-size: 28px;
+      margin: 5px 0 -8px 22px;
+    }
+  
+    .penthousesInfoSquareText{
+      font-size: 24px;
+      text-align: center;
+      margin: -8px 15px 8px 15px;  
+    }
+  }
+  
+  .penthousesPriceContainer{
+    width: 185.66px;
+    border: 2px solid #C9AC7A;
+    margin-right: 25px;
+  
+    .penthousesPriceTitle{
+      font-size: 28px;
+      margin: 5px 0 -8px 52px;
+    }
+  
+    .penthousesPriceText{
+      font-size: 24px;
+      text-align: center;
+      margin: -8px 15px 8px 15px;  
+    }
+  }
+
+  .penthousesPriceContainerPrice{
+    background-color: #cfb88e;
+    border: 2px solid #eca72f;
+  }
+  
+  .penthousesFloorContainer{
+    width: 185.66px;
+    border: 2px solid #C9AC7A;
+    margin-right: 25px;
+  
+    .penthousesFloorTitle{
+      text-align: center;
+      font-size: 28px;
+      margin: 5px 0 -8px 52px;
+    }
+  
+    .penthousesFloorText{
+      font-size: 24px;
+      text-align: center;
+      margin: -8px 15px 8px 15px;
+    }
+  }
+}
+
+.pagePenthousesDescrContainer{
+  
+  .pagePenthousesDescrTitle{
+    font-size: 30px;
+  }
+  .pagePenthousesDescrText{
+    width: 600px;
+    font-size: 25px;
+  }
+}
+
+.penthousesPlanContainer{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .penthousesDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .penthousesDot--1{
+    top: 272px;
+    left: 250px;
+  }
+
+  .penthousesDot--2{
+    top: 350px;
+    left: 365px;
+  }
+
+  .penthousesDot--3{
+    top: 230px;
+    left: 514px;
+  }
+
+  .penthousesDot--4{
+    top: 290px;
+    left: 407px;
+  }
+
+  .penthousesDot--5{
+    top: 125px;
+    left: 104px;
+  }
+
+  .penthousesDot--6{
+    top: 153px;
+    left: 478px;
+  }
+
+  .penthousesDot--7{
+    top: 38px;
+    left: 160px;
+  }
+
+  .penthousesDot--8{
+    top: 112px;
+    left: 395px;
+  }
+
+  .penthousesDot--9{
+    top: 115px;
+    left: 225px;
+  }
+
+  .penthousesDot--10{
+    top: 235px;
+    left: 41px;
+  }
+
+  .penthousesDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .penthousesDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 50;
+  }
+
+  .penthousesDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 51;
+  }
+
+  .penthousesDot:hover::after{
+    display: block;
+  }
+
+  .penthousesDot:hover::before{
+    display: block;
+  }
+
+  .penthousesDot:hover .penthousesDotText{
+    display: block;
+  }
+}
+
+.pagePenthousesForm{
+  width: 560px;
+  min-height: 200px;
+  border: 2px solid #C9AC7A;
+  margin: 20px 0 20px 0;
+  padding: 10px 15px 15px 15px;
+
+  .penthousesFormTitle{
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+  }
+
+  .penthousesFormInput{
+    font-size: 20px;
+    width: 300px;
+    min-height: 40px;
+    margin: 15px 0 15px 0;
+    padding: 5px 12px 7px 12px;
+    border: 2px solid #C9AC7A;
+  }
+
+  .certificateFormLink{
+    text-decoration: none;
+  }
+
+  .certificateFormBtn{
+    width: 200px;
+    padding: 5px 10px 10px 10px;
+    border: 2px solid #C9AC7A;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: all .4s;
+  
+    &:hover{
+      background-color: #C9AC7A;
+      border: 2px solid #f3bf64;
+    }
+  }
+
+}
+
+// ~~ PagePenthouses-ALL-PAGE -- end ~~
+
+// ~~ PagePenthouses-2-PAGE -- start ~~
+
+
+
+// ~~ PagePenthouses-2-PAGE -- end ~~
+
+// ~~ CertificatePage-PAGE -- start ~~
+
+.certificatePageContentContainer{
+  padding: 100px 0 20px 0;
+}
+
+.certificateBox{
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  .certificateBoxTitle{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// ~~ CertificatePage-PAGE -- end ~~

@@ -24,6 +24,7 @@ function Penthouses({ itemsCardPethouses }) {
                                 squareApartment={item.squareApartment}
                                 priceApartment={item.priceApartment}
                                 apartmentDescription={item.apartmentDescription}
+                                watchPenthousesLink={item.watchPenthousesLink}
                             />
                         ))}
                     </div>
