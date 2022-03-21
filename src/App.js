@@ -4,7 +4,12 @@ import { Route, Routes } from "react-router-dom";
 
 import { Home, AboutUs, ConstructionProgress, Apartments, Penthouses,
         PagePenthousesOne, PagePenthousesTwo, PagePenthousesThree, PagePenthousesFour,
-        PagePenthousesFive, PagePenthousesSix, CertificatePage } from './pages/index';
+        PagePenthousesFive, PagePenthousesSix, CertificatePage, PageApartmentsOne, 
+        PageApartmentsTwo, PageApartmentsThree, PageApartmentsFour, PageApartmentsFive, 
+        PageApartmentsSix, PageApartmentsSeven, PageApartmentsEight, PageApartmentsNine,
+        PageApartmentsTen, PageApartmentsEleven, PageApartmentsTwelve, PageApartmentsThirteen,
+        PageApartmentsFourteen, PageApartmentsFifteen, PageApartmentsSixteen, PageApartmentsSeventeen,
+        PageApartmentsEighteen, PageApartmentsNineteen, PageApartmentsTwenty } from './pages/index';
 
 function App() {
   const [itemsCardPethouses, setItemsCardPenthouses] = React.useState([]);
@@ -44,6 +49,26 @@ function App() {
         <Route path="/pagePenthousesFive" element={<PagePenthousesFive/>} exact/>
         <Route path="/pagePenthousesSix" element={<PagePenthousesSix/>} exact/>
         <Route path="/certificatePage" element={<CertificatePage/>} exact/>
+        <Route path="/pageApartmentsOne" element={<PageApartmentsOne/>} exact/>
+        <Route path="/pageApartmentsTwo" element={<PageApartmentsTwo/>} exact/>
+        <Route path="/pageApartmentsThree" element={<PageApartmentsThree/>} exact/>
+        <Route path="/pageApartmentsFour" element={<PageApartmentsFour/>} exact/>
+        <Route path="/pageApartmentsFive" element={<PageApartmentsFive/>} exact/>
+        <Route path="/pageApartmentsSix" element={<PageApartmentsSix/>} exact/>
+        <Route path="/pageApartmentsSeven" element={<PageApartmentsSeven/>} exact/>
+        <Route path="/pageApartmentsEight" element={<PageApartmentsEight/>} exact/>
+        <Route path="/pageApartmentsNine" element={<PageApartmentsNine/>} exact/>
+        <Route path="/pageApartmentsTen" element={<PageApartmentsTen/>} exact/>
+        <Route path="/PageApartmentsEleven" element={<PageApartmentsEleven/>} exact/>
+        <Route path="/PageApartmentsTwelve" element={<PageApartmentsTwelve/>} exact/>
+        <Route path="/PageApartmentsThirteen" element={<PageApartmentsThirteen/>} exact/>
+        <Route path="/PageApartmentsFourteen" element={<PageApartmentsFourteen/>} exact/>
+        <Route path="/PageApartmentsFifteen" element={<PageApartmentsFifteen/>} exact/>
+        <Route path="/PageApartmentsSixteen" element={<PageApartmentsSixteen/>} exact/>
+        <Route path="/PageApartmentsSeventeen" element={<PageApartmentsSeventeen/>} exact/>
+        <Route path="/PageApartmentsEighteen" element={<PageApartmentsEighteen/>} exact/>
+        <Route path="/PageApartmentsNineteen" element={<PageApartmentsNineteen/>} exact/>
+        <Route path="/PageApartmentsTwenty" element={<PageApartmentsTwenty/>} exact/>
       </Routes>
     </div>
   );

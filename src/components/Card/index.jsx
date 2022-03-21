@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import style from "./Card.module.scss";
 
-function Card({ apartmentsUrlImg, apartmentsName, squareApartment, priceApartment, apartmentDescription, watchPenthousesLink }) {
+function Card({ apartmentsUrlImg, apartmentsName, squareApartment, priceApartment, apartmentDescription, watchApartmentsLink }) {
     return(
         <div className={style.cardWrapper}>
             <div className={style.cardImgContainer}>
@@ -37,7 +37,7 @@ function Card({ apartmentsUrlImg, apartmentsName, squareApartment, priceApartmen
                     </p>
                 </div>
             </div>
-            <Link to={`${watchPenthousesLink}`}>
+            <Link to={`${watchApartmentsLink}`}>
                 <div className={style.watchPenthousesBtn}>
                     Смотреть
                 </div>

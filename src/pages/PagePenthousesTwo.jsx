@@ -57,32 +57,44 @@ function PagePenthousesTwo() {
                         </b>
                         <p className='pagePenthousesDescrText'>
                             Этот пентхаус предназначенный для своей планировки и дизайна. 
-                            Вы можете по настоящему раскрыть творческий потенциал. С подземной парковкой.
+                            Вы можете по настоящему раскрыть творческий потенциал. 
+                            Что входит в этот пентхаус:<br/>
+                            - Подземная парковка;<br/>
+                            - Нижняя терраса;<br/>
+                            - Гостинная;<br/>
+                            - Кухня;<br/>
+                            - Основная спальня;<br/>
+                            - Ванная комната при основной спальни;<br/>
+                            - Гардеробная при основной спальни;<br/>
+                            - Вторая спальня со встроенным гардеробом;<br/>
+                            - Ванная комната у второй спальни;<br/>
+                            - Туалет, предназначенный для гостей;<br/>
+                            - Третья спальня со встроенным гардеробом;<br/>
                         </p>
-                        <div className="penthousesPlanContainer">
+                        <div className="penthousesPlanContainerTwoPage">
                             <img src="img/penthouse_plan2.png" alt="penthouse plan"  width="600" height="500"/>
 
                             <div className="penthousesDot penthousesDot--1">
                                 <p className="penthousesDotText">
-                                    Гостинная и кухня с современной и дорогой отделкой.
+                                    Совмещённая гостинная и кухня.
                                 </p>
                             </div>
 
                             <div className="penthousesDot penthousesDot--2">
                                 <p className="penthousesDotText">
-                                    Просторная и основная спальня из немецкой небели.
+                                    Основная спальня. Дизайн был выполнен французским дизайнером.
                                 </p>
                             </div>
 
                             <div className="penthousesDot penthousesDot--3">
                                 <p className="penthousesDotText">
-                                    Гардеробная основной спальни.
+                                    Самая большая гардеробная при основной спальне.
                                 </p>
                             </div>
 
                             <div className="penthousesDot penthousesDot--4">
                                 <p className="penthousesDotText">
-                                    Ванная комната при основной спальни.
+                                    Ванная комната при основной спальне.
                                 </p>
                             </div>
 
@@ -112,13 +124,19 @@ function PagePenthousesTwo() {
 
                             <div className="penthousesDot penthousesDot--9">
                                 <p className="penthousesDotText">
-                                    Туалет предназначенный для гостей.
+                                    Спальня со встроенным гардеробом.
                                 </p>
                             </div>
 
                             <div className="penthousesDot penthousesDot--10">
                                 <p className="penthousesDotText">
-                                    Нижняя терраса для вечерних посиделок.
+                                    Гостевой санузел.
+                                </p>
+                            </div>
+
+                            <div className="penthousesDot penthousesDot--11">
+                                <p className="penthousesDotText">
+                                    Нижняя терраса.
                                 </p>
                             </div>
 

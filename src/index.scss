@@ -69,9 +69,12 @@
 
 .headerTitleContainer{
   z-index: 50;
+  width: 575px;
   position: absolute;
-  top: 300px;
-  left: 470px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 
   .headerLineTop{
     width: 300px;
@@ -158,6 +161,24 @@
 
 .apartmentsContainer{
   display: flex;
+}
+
+.backContainerApartments{
+  top: 90px;
+  position: absolute;
+  width: 170px;
+  display: flex;
+  border: 2px solid #C9AC7A;
+  padding: 5px;
+  text-decoration: none;
+  transition: all .4s;
+
+  .backContainerText{
+    font-size: 34px;
+    color: #C9AC7A;
+    margin-left: 5px;
+    text-decoration: none;
+  }
 }
 
 .apartmentsBox,
@@ -449,9 +470,24 @@
 }
 
 .aboutUsContainer{
+  display: flex;
 
-  .aboutUsContainerTitle{
-    font-size: 30px;
+  .aboutUsContainerTextTitle{
+    font-size: 50px;
+    width: 440px;
+    margin: 10px;
+    padding: 10px 10px 15px 10px;
+    border: 3px solid #C9AC7A;
+  }
+
+  .aboutUsContainerText{
+    font-size: 25px;
+    width: 450px;
+    margin: 20px 0 20px 0;
+  }
+
+  .aboutUsContainerImg{
+    margin: 0 0 20px 10px;
   }
 }
 
@@ -465,7 +501,7 @@
 // ~~ Apartments-PAGE -- end ~~
 
 .apartmentsContentTitle{
-  padding: 120px 0 40px 30px;
+  padding: 185px 0 40px 30px;
 
   .titleLineTop{
     width: 193px;
@@ -501,8 +537,12 @@
   padding: 10px 0 40px 0;
 }
 
+.backContainerPenthouses{
+  margin-top: 80px;
+}
+
 .penthousesContentTitle{
-  padding: 120px 0 40px 30px;
+  padding: 30px 0 40px 30px;
 
   .titleLineTop{
     width: 193px;
@@ -678,7 +718,7 @@
   }
   
   .penthousesPriceContainer{
-    width: 185.66px;
+    min-width: 185.66px;
     border: 2px solid #C9AC7A;
     margin-right: 25px;
   
@@ -729,7 +769,7 @@
   }
 }
 
-.penthousesPlanContainer{
+.penthousesPlanContainerOnePage{
   margin: 15px 0 15px 0;
   position: relative;
 
@@ -889,14 +929,2114 @@
 
 // ~~ PagePenthouses-2-PAGE -- start ~~
 
+.penthousesPlanContainerTwoPage{
+  margin: 15px 0 15px 0;
+  position: relative;
 
+  .penthousesDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .penthousesDot--1{
+    top: 343px;
+    left: 156px;
+  }
+
+  .penthousesDot--2{
+    top: 84px;
+    left: 471px;
+  }
+
+  .penthousesDot--3{
+    top: 126px;
+    left: 370px;
+  }
+
+  .penthousesDot--4{
+    top: 41px;
+    left: 369px;
+  }
+
+  .penthousesDot--5{
+    top: 81px;
+    left: 153px;
+  }
+
+  .penthousesDot--6{
+    top: 245px;
+    left: 470px;
+  }
+
+  .penthousesDot--7{
+    top: 41px;
+    left: 247px;
+  }
+
+  .penthousesDot--8{
+    top: 309px;
+    left: 352px;
+  }
+
+  .penthousesDot--9{
+    top: 190px;
+    left: 472px;
+  }
+
+  .penthousesDot--10{
+    top: 256px;
+    left: 243px;
+  }
+
+  .penthousesDot--11{
+    top: 202px;
+    left: 44px;
+  }
+
+  .penthousesDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .penthousesDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 50;
+  }
+
+  .penthousesDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 51;
+  }
+
+  .penthousesDot:hover::after{
+    display: block;
+  }
+
+  .penthousesDot:hover::before{
+    display: block;
+  }
+
+  .penthousesDot:hover .penthousesDotText{
+    display: block;
+  }
+}
 
 // ~~ PagePenthouses-2-PAGE -- end ~~
+
+// ~~ PagePenthouses-3-PAGE -- start ~~
+
+.penthousesPlanContainerThreePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .penthousesDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .penthousesDot--1{
+    top: 326px;
+    left: 162px;
+  }
+
+  .penthousesDot--2{
+    top: 68px;
+    left: 177px;
+  }
+
+  .penthousesDot--3{
+    top: 126px;
+    left: 126px;
+  }
+
+  .penthousesDot--4{
+    top: 120px;
+    left: 210px;
+  }
+
+  .penthousesDot--5{
+    top: 369px;
+    left: 453px;
+  }
+
+  .penthousesDot--6{
+    top: 284px;
+    left: 451px;
+  }
+
+  .penthousesDot--7{
+    top: 428px;
+    left: 322px;
+  }
+
+  .penthousesDot--8{
+    top: 379px;
+    left: 300px;
+  }
+
+  .penthousesDot--9{
+    top: 138px;
+    left: 353px;
+  }
+
+  .penthousesDot--10{
+    top: 323px;
+    left: 44px;
+  }
+
+  .penthousesDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .penthousesDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 50;
+  }
+
+  .penthousesDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 51;
+  }
+
+  .penthousesDot:hover::after{
+    display: block;
+  }
+
+  .penthousesDot:hover::before{
+    display: block;
+  }
+
+  .penthousesDot:hover .penthousesDotText{
+    display: block;
+  }
+}
+
+// ~~ PagePenthouses-3-PAGE -- end ~~
+
+// ~~ PagePenthouses-4-PAGE -- start ~~
+
+.penthousesPlanContainerFourPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .penthousesDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .penthousesDot--1{
+    top: 303px;
+    left: 399px;
+  }
+
+  .penthousesDot--2{
+    top: 68px;
+    left: 313px;
+  }
+
+  .penthousesDot--3{
+    top: 124px;
+    left: 435px;
+  }
+
+  .penthousesDot--4{
+    top: 120px;
+    left: 352px;
+  }
+
+  .penthousesDot--5{
+    top: 369px;
+    left: 111px;
+  }
+
+  .penthousesDot--6{
+    top: 284px;
+    left: 109px;
+  }
+
+  .penthousesDot--7{
+    top: 428px;
+    left: 239px;
+  }
+
+  .penthousesDot--8{
+    top: 379px;
+    left: 221px;
+  }
+
+  .penthousesDot--9{
+    top: 138px;
+    left: 207px;
+  }
+
+  .penthousesDot--10{
+    top: 244px;
+    left: 519px;
+  }
+
+  .penthousesDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .penthousesDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 50;
+  }
+
+  .penthousesDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 51;
+  }
+
+  .penthousesDot:hover::after{
+    display: block;
+  }
+
+  .penthousesDot:hover::before{
+    display: block;
+  }
+
+  .penthousesDot:hover .penthousesDotText{
+    display: block;
+  }
+}
+
+// ~~ PagePenthouses-4-PAGE -- end ~~
+
+// ~~ PagePenthouses-5-PAGE -- start ~~
+
+.penthousesPlanContainerFivePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .penthousesDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .penthousesDot--1{
+    top: 187px;
+    left: 142px;
+  }
+
+  .penthousesDot--2{
+    top: 87px;
+    left: 449px;
+  }
+
+  .penthousesDot--3{
+    top: 101px;
+    left: 528px;
+  }
+
+  .penthousesDot--4{
+    top: 168px;
+    left: 529px;
+  }
+
+  .penthousesDot--5{
+    top: 265px;
+    left: 522px;
+  }
+
+  .penthousesDot--6{
+    top: 284px;
+    left: 396px;
+  }
+
+  .penthousesDot--7{
+    top: 185px;
+    left: 473px;
+  }
+
+  .penthousesDot--8{
+    top: 217px;
+    left: 372px;
+  }
+
+  .penthousesDot--9{
+    top: 279px;
+    left: 477px;
+  }
+
+  .penthousesDot--10{
+    top: 103px;
+    left: 232px;
+  }
+
+  .penthousesDot--11{
+    top: 30px;
+    left: 301px;
+  }
+
+  .penthousesDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .penthousesDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 50;
+  }
+
+  .penthousesDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 51;
+  }
+
+  .penthousesDot:hover::after{
+    display: block;
+  }
+
+  .penthousesDot:hover::before{
+    display: block;
+  }
+
+  .penthousesDot:hover .penthousesDotText{
+    display: block;
+  }
+}
+
+// ~~ PagePenthouses-5-PAGE -- end ~~
+
+// ~~ PagePenthouses-6-PAGE -- end ~~
+
+.penthousesPlanContainerSixPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .penthousesDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .penthousesDot--1{
+    top: 187px;
+    left: 419px;
+  }
+
+  .penthousesDot--2{
+    top: 87px;
+    left: 112px;
+  }
+
+  .penthousesDot--3{
+    top: 101px;
+    left: 31px;
+  }
+
+  .penthousesDot--4{
+    top: 168px;
+    left: 31px;
+  }
+
+  .penthousesDot--5{
+    top: 264px;
+    left: 39px;
+  }
+
+  .penthousesDot--6{
+    top: 284px;
+    left: 164px;
+  }
+
+  .penthousesDot--7{
+    top: 185px;
+    left: 91px;
+  }
+
+  .penthousesDot--8{
+    top: 217px;
+    left: 193px;
+  }
+
+  .penthousesDot--9{
+    top: 279px;
+    left: 83px;
+  }
+
+  .penthousesDot--10{
+    top: 103px;
+    left: 328px;
+  }
+
+  .penthousesDot--11{
+    top: 29px;
+    left: 244px;
+  }
+
+  .penthousesDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .penthousesDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 50;
+  }
+
+  .penthousesDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 51;
+  }
+
+  .penthousesDot:hover::after{
+    display: block;
+  }
+
+  .penthousesDot:hover::before{
+    display: block;
+  }
+
+  .penthousesDot:hover .penthousesDotText{
+    display: block;
+  }
+}
+
+// ~~ PagePenthouses-6-PAGE -- end ~~
+
+// ~~ PageApartments-ALL-PAGE -- start ~~
+
+.pageApartmentsContentContainer{
+  padding: 100px 0 20px 0;
+  background-color: #fff;
+}
+
+.pageApartmentsTitle{
+  font-size: 45px;
+  margin: 15px 0 15px 0;
+}
+
+.pageApartmentsLine{
+  width: 100%;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+
+.pageApartmentsImg{
+  margin: 15px 0 11px 0;
+}
+
+.linkPageApartments{
+  text-decoration: none;
+}
+
+.pageApartmentsInfo{
+  display: flex;
+  margin: 15px 0 15px 0;
+
+  .apartmentsSquareContainer{
+    width: 185.66px;
+    border: 2px solid #C9AC7A;
+    margin-right: 25px;
+  
+    .apartmentsSquareTitle{
+      text-align: center;
+      font-size: 28px;
+      margin: 5px 0 -8px 22px;
+    }
+  
+    .apartmentsInfoSquareText{
+      font-size: 24px;
+      text-align: center;
+      margin: -8px 15px 8px 15px;  
+    }
+  }
+  
+  .apartmentsPriceContainer{
+    min-width: 185.66px;
+    border: 2px solid #C9AC7A;
+    margin-right: 25px;
+  
+    .apartmentsPriceTitle{
+      font-size: 28px;
+      margin: 5px 0 -8px 52px;
+    }
+  
+    .apartmentsPriceText{
+      font-size: 24px;
+      text-align: center;
+      margin: -8px 15px 8px 15px;  
+    }
+  }
+
+  .apartmentsPriceContainerPrice{
+    background-color: #cfb88e;
+    border: 2px solid #eca72f;
+  }
+  
+  .apartmentsFloorContainer{
+    width: 185.66px;
+    border: 2px solid #C9AC7A;
+    margin-right: 25px;
+  
+    .apartmentsFloorTitle{
+      text-align: center;
+      font-size: 28px;
+      margin: 5px 0 -8px 52px;
+    }
+  
+    .apartmentsFloorText{
+      font-size: 24px;
+      text-align: center;
+      margin: -8px 15px 8px 15px;
+    }
+  }
+}
+
+.pageApartmentsDescrContainer{
+  
+  .pageApartmentsDescrTitle{
+    font-size: 30px;
+  }
+  .pageApartmentsDescrText{
+    width: 600px;
+    font-size: 25px;
+  }
+}
+
+.pageApartmentsForm{
+  width: 560px;
+  min-height: 200px;
+  border: 2px solid #C9AC7A;
+  margin: 20px 0 20px 0;
+  padding: 10px 15px 15px 15px;
+
+  .apartmentsFormTitle{
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+  }
+
+  .apartmentsFormInput{
+    font-size: 20px;
+    width: 300px;
+    min-height: 40px;
+    margin: 15px 0 15px 0;
+    padding: 5px 12px 7px 12px;
+    border: 2px solid #C9AC7A;
+  }
+
+  .certificateFormLink{
+    text-decoration: none;
+  }
+
+  .certificateFormBtn{
+    width: 200px;
+    padding: 5px 10px 10px 10px;
+    border: 2px solid #C9AC7A;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: all .4s;
+  
+    &:hover{
+      background-color: #C9AC7A;
+      border: 2px solid #f3bf64;
+    }
+  }
+
+}
+
+// ~~ PageApartments-ALL-PAGE -- end ~~
+
+// ~~ PageApartments-1-PAGE -- start ~~
+
+.apartmentsPlanContainerOnePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 307px;
+    left: 292px;
+  }
+
+  .apartmentsDot--2{
+    top: 158px;
+    left: 204px;
+  }
+
+  .apartmentsDot--3{
+    top: 101px;
+    left: 318px;
+  }
+
+  .apartmentsDot--4{
+    top: 168px;
+    left: 420px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-1-PAGE -- end ~~
+
+// ~~ PageApartments-2-PAGE -- start ~~
+
+.apartmentsPlanContainerTwoPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 202px;
+    left: 376px;
+  }
+
+  .apartmentsDot--2{
+    top: 148px;
+    left: 73px;
+  }
+
+  .apartmentsDot--3{
+    top: 132px;
+    left: 137px;
+  }
+
+  .apartmentsDot--4{
+    top: 130px;
+    left: 211px;
+  }
+
+  .apartmentsDot--5{
+    top: 273px;
+    left: 489px;
+  }
+
+  .apartmentsDot--6{
+    top: 332px;
+    left: 489px;
+  }
+
+  .apartmentsDot--7{
+    top: 375px;
+    left: 377px;
+  }
+
+  .apartmentsDot--8{
+    top: 311px;
+    left: 344px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-2-PAGE -- end ~~
+
+// ~~ PageApartments-3-PAGE -- start ~~
+
+.apartmentsPlanContainerThreePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 330px;
+    left: 279px;
+  }
+
+  .apartmentsDot--2{
+    top: 116px;
+    left: 340px;
+  }
+
+  .apartmentsDot--3{
+    top: 78px;
+    left: 267px;
+  }
+
+  .apartmentsDot--4{
+    top: 88px;
+    left: 211px;
+  }
+
+  .apartmentsDot--5{
+    top: 169px;
+    left: 340px;
+  }
+
+  .apartmentsDot--6{
+    top: 182px;
+    left: 215px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-3-PAGE -- end ~~
+
+// ~~ PageApartments-4-PAGE -- start ~~
+
+.apartmentsPlanContainerFourPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 330px;
+    left: 281px;
+  }
+
+  .apartmentsDot--2{
+    top: 179px;
+    left: 192px;
+  }
+
+  .apartmentsDot--3{
+    top: 118px;
+    left: 359px;
+  }
+
+  .apartmentsDot--4{
+    top: 88px;
+    left: 211px;
+  }
+
+  .apartmentsDot--5{
+    top: 169px;
+    left: 340px;
+  }
+
+  .apartmentsDot--6{
+    top: 182px;
+    left: 215px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-4-PAGE -- end ~~
+
+// ~~ PageApartments-5-PAGE -- start ~~
+
+.apartmentsPlanContainerFivePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 371px;
+    left: 272px;
+  }
+
+  .apartmentsDot--2{
+    top: 117px;
+    left: 328px;
+  }
+
+  .apartmentsDot--3{
+    top: 140px;
+    left: 206px;
+  }
+
+  .apartmentsDot--4{
+    top: 66px;
+    left: 247px;
+  }
+
+  .apartmentsDot--5{
+    top: 241px;
+    left: 342px;
+  }
+
+  .apartmentsDot--6{
+    top: 214px;
+    left: 200px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-5-PAGE -- end ~~
+
+// ~~ PageApartments-6-PAGE -- start ~~
+
+.apartmentsPlanContainerSixPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 109px;
+    left: 272px;
+  }
+
+  .apartmentsDot--2{
+    top: 363px;
+    left: 174px;
+  }
+
+  .apartmentsDot--3{
+    top: 245px;
+    left: 141px;
+  }
+
+  .apartmentsDot--4{
+    top: 243px;
+    left: 204px;
+  }
+
+  .apartmentsDot--5{
+    top: 384px;
+    left: 264px;
+  }
+
+  .apartmentsDot--6{
+    top: 384px;
+    left: 340px;
+  }
+
+  .apartmentsDot--7{
+    top: 252px;
+    left: 293px;
+  }
+
+  .apartmentsDot--8{
+    top: 303px;
+    left: 385px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-6-PAGE -- end ~~
+
+// ~~ PageApartments-7-PAGE -- start ~~
+
+.apartmentsPlanContainerSevenPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 309px;
+    left: 272px;
+  }
+
+  .apartmentsDot--2{
+    top: 187px;
+    left: 199px;
+  }
+
+  .apartmentsDot--3{
+    top: 120px;
+    left: 316px;
+  }
+
+  .apartmentsDot--4{
+    top: 136px;
+    left: 426px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-7-PAGE -- end ~~
+
+// ~~ PageApartments-8-PAGE -- start ~~
+
+.apartmentsPlanContainerEightPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 93px;
+    left: 267px;
+  }
+
+  .apartmentsDot--2{
+    top: 348px;
+    left: 342px;
+  }
+
+  .apartmentsDot--3{
+    top: 399px;
+    left: 257px;
+  }
+
+  .apartmentsDot--4{
+    top: 386px;
+    left: 194px;
+  }
+
+  .apartmentsDot--5{
+    top: 231px;
+    left: 348px;
+  }
+
+  .apartmentsDot--6{
+    top: 261px;
+    left: 199px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-8-PAGE -- end ~~
+
+// ~~ PageApartments-9-PAGE -- start ~~
+
+.apartmentsPlanContainerNinePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 93px;
+    left: 267px;
+  }
+
+  .apartmentsDot--2{
+    top: 348px;
+    left: 342px;
+  }
+
+  .apartmentsDot--3{
+    top: 80px;
+    left: 265px;
+  }
+
+  .apartmentsDot--4{
+    top: 88px;
+    left: 209px;
+  }
+
+  .apartmentsDot--5{
+    top: 168px;
+    left: 344px;
+  }
+
+  .apartmentsDot--6{
+    top: 185px;
+    left: 212px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-9-PAGE -- end ~~
+
+// ~~ PageApartments-10-PAGE -- start ~~
+
+.apartmentsPlanContainerTenPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 328px;
+    left: 277px;
+  }
+
+  .apartmentsDot--2{
+    top: 113px;
+    left: 339px;
+  }
+
+  .apartmentsDot--3{
+    top: 77px;
+    left: 265px;
+  }
+
+  .apartmentsDot--4{
+    top: 386px;
+    left: 194px;
+  }
+
+  .apartmentsDot--5{
+    top: 231px;
+    left: 348px;
+  }
+
+  .apartmentsDot--6{
+    top: 261px;
+    left: 199px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-10-PAGE -- end ~~
+
+// ~~ PageApartments-11-PAGE -- start ~~
+
+.apartmentsPlanContainerElevenPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 328px;
+    left: 277px;
+  }
+
+  .apartmentsDot--2{
+    top: 175px;
+    left: 195px;
+  }
+
+  .apartmentsDot--3{
+    top: 114px;
+    left: 356px;
+  }
+
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-11-PAGE -- end ~~
+
+// ~~ PageApartments-12-PAGE -- start ~~
+
+.apartmentsPlanContainerTwelvePage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 201px;
+    left: 376px;
+  }
+
+  .apartmentsDot--2{
+    top: 148px;
+    left: 75px;
+  }
+
+  .apartmentsDot--3{
+    top: 141px;
+    left: 133px;
+  }
+
+  .apartmentsDot--4{
+    top: 130px;
+    left: 209px;
+  }
+
+  .apartmentsDot--5{
+    top: 273px;
+    left: 490px;
+  }
+
+  .apartmentsDot--6{
+    top: 325px;
+    left: 490px;
+  }
+
+  .apartmentsDot--7{
+    top: 376px;
+    left: 378px;
+  }
+
+  .apartmentsDot--8{
+    top: 311px;
+    left: 343px;
+  }
+  
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-12-PAGE -- end ~~
+
+// ~~ PageApartments-13-PAGE -- start ~~
+
+.apartmentsPlanContainerThirteenPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 89px;
+    left: 267px;
+  }
+
+  .apartmentsDot--2{
+    top: 352px;
+    left: 342px;
+  }
+
+  .apartmentsDot--3{
+    top: 400px;
+    left: 255px;
+  }
+
+  .apartmentsDot--4{
+    top: 389px;
+    left: 190px;
+  }
+
+  .apartmentsDot--5{
+    top: 227px;
+    left: 347px;
+  }
+
+  .apartmentsDot--6{
+    top: 263px;
+    left: 198px;
+  }
+  
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-13-PAGE -- end ~~
+
+// ~~ PageApartments-14-PAGE -- start ~~
+
+.apartmentsPlanContainerFourteenPage{
+  margin: 15px 0 15px 0;
+  position: relative;
+
+  .apartmentsDot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('../public/img/penthouse_plan_icon.svg');
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .apartmentsDot--1{
+    top: 278px;
+    left: 400px;
+  }
+
+  .apartmentsDot--2{
+    top: 277px;
+    left: 152px;
+  }
+
+  .apartmentsDot--3{
+    top: 172px;
+    left: 255px;
+  }
+  
+  .apartmentsDot::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #eca72f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .apartmentsDot::before{
+    content: "";
+    position: absolute;
+    background-image: url('../public/img/penthouse_plan_line_icon-1.svg');
+    width: 263px;
+    height: 135.3px;
+    top: -127px;
+    left: 30px;
+    display: none;
+    z-index: 51;
+  }
+
+  .apartmentsDotText{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    bottom: 98px;
+    left: 80px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    z-index: 52;
+  }
+
+  .apartmentsDot:hover::after{
+    display: block;
+  }
+
+  .apartmentsDot:hover::before{
+    display: block;
+  }
+
+  .apartmentsDot:hover .apartmentsDotText{
+    display: block;
+  }
+}
+
+// ~~ PageApartments-14-PAGE -- end ~~
 
 // ~~ CertificatePage-PAGE -- start ~~
 
 .certificatePageContentContainer{
   padding: 100px 0 20px 0;
+}
+
+.certificateBoxImg{
+  display: flex;
+  margin: 20px auto 10px auto;
 }
 
 .certificateBox{
@@ -905,11 +3045,18 @@
   border: 1px solid #000;
   border-radius: 10px;
   margin: 0 auto;
+  padding: 10px 20px 10px 20px;
 
   .certificateBoxTitle{
     width: 300px;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .certificateBoxText{
+    margin-top: 10px;
+    font-size: 23px;
+    text-align: center;
   }
 }
 

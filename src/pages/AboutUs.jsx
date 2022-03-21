@@ -16,7 +16,17 @@ function AboutUs() {
                     <div className="titleLinebottom"></div>
                 </div>
                 <div className="aboutUsContainer">
-                    <h2 className="aboutUsContainerTitle">Хмельницкий, 11</h2>
+                    <div className="aboutUsContainerText">
+                        <h2 className="aboutUsContainerTextTitle">Хмельницкий, 11</h2>
+                        <p className="aboutUsContainerTextSubtext">
+                            Это комплекс элитных жилых домов. Мы на рынке уже 10 лет и было выполнено 50 успешных проектов.
+                            Покупая у нас недвижимость, вы можете не бояться о потери денег. Как показывает практика - с каждым годом
+                            наши апартаменты стабильно растут в цене.
+                        </p>
+                    </div>
+                    <div className="aboutUsContainerImg">
+                        <img src="img/about-us-img.jpg" alt="" width="800" height="500"/>
+                    </div>
                 </div>
             </div>
             <Footer/>

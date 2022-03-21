@@ -57,9 +57,21 @@ function PagePenthousesOne() {
                         </b>
                         <p className='pagePenthousesDescrText'>
                             Этот пентхаус предназначенный для своей планировки и дизайна. 
-                            Вы можете по настоящему раскрыть творческий потенциал. С подземной парковкой.
+                            Вы можете по настоящему раскрыть творческий потенциал. 
+                            Что входит в этот пентхаус:<br/>
+                            - Подземная парковка;<br/>
+                            - Нижняя терраса;<br/>
+                            - Гостинная;<br/>
+                            - Кухня;<br/>
+                            - Основная спальня;<br/>
+                            - Ванная комната при основной спальни;<br/>
+                            - Гардеробная при основной спальни;<br/>
+                            - Вторая спальня со встроенным гардеробом;<br/>
+                            - Ванная комната у второй спальни;<br/>
+                            - Туалет, предназначенный для гостей;<br/>
+                            - Третья спальня со встроенным гардеробом;<br/>
                         </p>
-                        <div className="penthousesPlanContainer">
+                        <div className="penthousesPlanContainerOnePage">
                             <img src="img/penthouse_plan1.png" alt="penthouse plan"  width="600" height="500"/>
 
                             <div className="penthousesDot penthousesDot--1">
@@ -70,7 +82,7 @@ function PagePenthousesOne() {
 
                             <div className="penthousesDot penthousesDot--2">
                                 <p className="penthousesDotText">
-                                    Просторная и основная спальня из немецкой небели.
+                                    Просторная и основная спальня из немецкой мебели.
                                 </p>
                             </div>
 

@@ -8,17 +8,12 @@ function Home() {
         <div className="homeContent">
             <header className="headerContent">
                 <Header/>
-                <div className="videoHeader">
-                    <div className="videoContainer">
-                        <video className="videoMedia" src="video/video__bg.mp4" autoPlay muted loop></video>
-                    </div>
-                </div>
                 <div className="headerTitleContainer">
-                    <div className="headerLineTop"></div>
-                    <h1 className="headerTitle">
-                        Премиальные ЖК в сердце города
-                    </h1>
-                    <div className="headerLogoBottomContainer">
+                        <div className="headerLineTop"></div>
+                        <h1 className="headerTitle">
+                            Премиальные ЖК в сердце города
+                        </h1>
+                        <div className="headerLogoBottomContainer">
                         <div className="headerLineBottomLeft"></div>
                         <div className="headerLineLogo">
                             <img src="img/logo.svg" alt="" width={50} height={50}/>
@@ -26,6 +21,13 @@ function Home() {
                         <div className="headerLineBottomRight"></div>
                     </div>
                 </div>
+                <div className="videoHeader">
+                    <div className="videoContainer">
+                        <video className="videoMedia" src="video/video__bg.mp4" autoPlay muted loop></video>
+                    </div>
+                    
+                </div>
+                
             </header>
             
             <div className="container">
@@ -34,7 +36,7 @@ function Home() {
                         <div className="apartmentsBox">
                             <div className="apartmentsInfo">
                                 <p className="apartmentsTitle">
-                                    <span className="apartmentsTitleSpan">78 </span><br/>квартир
+                                    <span className="apartmentsTitleSpan">20 </span><br/>квартир
                                 </p>
                                 <div className="apartmentAreaContainer">
                                     <div className="apartmentAreaInfo">

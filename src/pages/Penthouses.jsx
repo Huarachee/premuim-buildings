@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Header, Footer, Card } from '../components/index';
 
@@ -8,6 +9,12 @@ function Penthouses({ itemsCardPethouses }) {
             <Header/>
             <div className="container">
                 <div className="penthousesContentWrapper">
+                    <Link className='linkPagePenthouses' to="/">
+                        <div className="backContainer backContainerPenthouses">
+                            <img src="img/arrow-left.svg" alt="arrow-left-svg" width="50" height="50"/>
+                            <b className="backContainerText">Назад</b>
+                        </div>
+                    </Link>
                     <div className="penthousesContentTitle">
                         <div className="titleLineTop"></div>
                         <h1>
@@ -24,7 +31,7 @@ function Penthouses({ itemsCardPethouses }) {
                                 squareApartment={item.squareApartment}
                                 priceApartment={item.priceApartment}
                                 apartmentDescription={item.apartmentDescription}
-                                watchPenthousesLink={item.watchPenthousesLink}
+                                watchApartmentsLink={item.watchApartmentsLink}
                             />
                         ))}
                     </div>
